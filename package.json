@@ -1,0 +1,23 @@
+{
+  "name": "wpsass",
+  "version": "1.0.0",
+  "description": "Use Sass with WordPress, Node Script in SCSS flavour.",
+  "scripts": {
+    "css": "node-sass --output-style compressed --include-path scss assets/css/source.scss style.css",
+    "watch": "nodemon -e scss -x \"npm run css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idevense/nbskscores.git"
+  },
+  "author": "Idar Evensen",
+  "license": "GNU General Public License, version 3",
+  "bugs": {
+    "url": "https://github.com/idevense/nbskscores/issues"
+  },
+  "homepage": "https://github.com/idevense/nbskscores#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
+  }
+}
