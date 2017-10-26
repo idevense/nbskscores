@@ -17,6 +17,13 @@ function nbskscores_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
+        // Adds a class of has-sidebar/no-sidebar telling us if sidebar is in use or not
+	if ( is_active_sidebar( 'sidebar-1') ) {
+		$classes[] = 'has-sidebar';
+        } else {
+                $classes[] = 'no-sidebar';
+        }
+        
 	return $classes;
 }
 add_filter( 'body_class', 'nbskscores_body_classes' );

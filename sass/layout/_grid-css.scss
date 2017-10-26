@@ -1,0 +1,34 @@
+@supports (grid-area: auto) {
+    .site{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
+    
+    .site-header{
+       grid-area: header; 
+       background-color: blueviolet;
+    }
+    
+    .site-main{
+      grid-area: main;  
+      background-color: gray;
+    }
+    
+    .widget-area{
+        grid-area: sidebar;
+        background-color: pink;
+    }
+    
+    .site-footer{
+        grid-area: footer;
+        background-color: yellow;
+    }
+
+
+
+
+}
