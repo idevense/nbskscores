@@ -1,5 +1,7 @@
-.site-main{
+.site-main {
     padding: 1em;
+    max-width: 40em;
+    margin: 0 auto;
     
     @media screen and (min-width: $query__small){
         padding: 2em;

@@ -31,12 +31,14 @@
 	}
 
 	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			container.className = container.className.replace( ' toggled', '' );
+		if ( -1 !== container.className.indexOf( 'toggled-on' ) ) {
+			container.className = container.className.replace( ' toggled-on', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
+                        button.innerHTML = "&#9776; Meny";
 			menu.setAttribute( 'aria-expanded', 'false' );
 		} else {
-			container.className += ' toggled';
+			container.className += ' toggled-on';
+                        button.innerHTML = "&#x274C; Lukk";
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
 		}

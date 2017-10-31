@@ -1,5 +1,7 @@
 @supports (grid-area: auto) {
-    .site{
+    @media screen and (min-width: $query__small) {
+         
+    .site {
         display: grid;
         grid-template-areas:
             "header"
@@ -8,27 +10,21 @@
             "footer";
     }
     
-    .site-header{
+    .site-header {
        grid-area: header; 
-       background-color: blueviolet;
     }
     
-    .site-main{
+    .site-main {
       grid-area: main;  
-      background-color: gray;
     }
     
-    .widget-area{
+    .widget-area {
         grid-area: sidebar;
-        background-color: pink;
     }
     
-    .site-footer{
+    .site-footer {
         grid-area: footer;
-        background-color: yellow;
     }
 
-
-
-
+    }
 }
