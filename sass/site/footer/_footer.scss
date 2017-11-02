@@ -1,33 +1,34 @@
 .site-footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
 	position: relative;
-	padding: 1em;
+        padding: 1em;
 	color: #fff;
 	background-color: $color__background-footer;
 	text-align: center;
-
-	a {
-		font-weight: 700;
-		color: white;
-		text-decoration: none;
-
-		&:hover,
-		&:focus {
-			text-decoration: underline;
-		}
-	}
-
+        flex: 1 1 auto;
+        line-height: 1.25;
+        
+        h6{margin:0;
+        padding:0;}
+        
 	@media screen and (min-width: $query__small) {
 		padding: 1em 2em;
 	}
 
 }
 
-.site-info {
-	margin: 1em 0 1em auto;
-	align-self: center;
-	font-size: 90%;
-
-	@media screen and (min-width: $query__medium) {
-		text-align: right;
-	}
+.site-footer__txt {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    text-align: left;
+    
+   a {
+       color:yellowgreen;
+       border-bottom: 1px solid white;
+       font-weight: 600;
+       text-decoration: none;
+   }
 }

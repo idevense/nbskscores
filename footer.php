@@ -14,17 +14,17 @@
 	
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nbskscores' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'nbskscores' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'nbskscores' ), 'nbskscores', '<a href="http://iedev.no">Idar Evensen</a>' );
-			?>
-		</div><!-- .site-info -->
+            <h6>Norges brannskole</h6><p style="font-style: italic">En del av virksomheten Direktoratet for Samfunnssikkerhet og Beredskap</p>
+            <div class="site-footer__txt">   
+                
+                
+                <p>Erling Johannessens vei 1, 9441 Fjelldal<br>
+                Telefon:<a href="tel:76 91 90 00">76 91 90 00</a>, E-post:<a href="mailto:firmapost@nbsk.no">firmapost@nbsk.no</a><br>
+                Organisasjonsnummer: 974 760 983 </p>
+            </div>
+
+
+                
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
