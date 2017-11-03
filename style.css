@@ -707,6 +707,14 @@ a:hover, a:active {
 	padding: 1em;
 }
 
+@media screen and (max-width: 419px) {
+	.site-header {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+}
+
 @media screen and (min-width: 600px) {
 	.site-header {
 		padding: 1 em 2em;
@@ -725,6 +733,14 @@ a:hover, a:active {
 	        flex: 1 0 auto;
 }
 
+@media screen and (max-width: 419px) {
+	.site-branding {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+}
+
 .site-branding__text {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -736,8 +752,13 @@ a:hover, a:active {
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
 	        justify-content: end;
-	height: 65px;
 	line-height: 1;
+}
+
+@media screen and (min-width: 600px) {
+	.site-branding__text {
+		height: 65px;
+	}
 }
 
 .custom-logo-link {
@@ -769,6 +790,7 @@ a:hover, a:active {
 }
 
 .site-description {
+	padding-top: 10px;
 	margin: 0;
 	font-size: .9em;
 	font-style: italic;
@@ -789,9 +811,9 @@ a:hover, a:active {
 }
 
 .main-navigation button.menu-toggle {
-	color: red;
 	padding: 0;
 	margin: 0;
+	padding-top: 10px;
 }
 
 /*
@@ -800,7 +822,6 @@ Header Menu
 .main-navigation {
 	font-family: "Roboto Mono", sans-serif;
 	font-size: 100%;
-	border: 1px solid black;
 }
 
 .main-navigation ul {

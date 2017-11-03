@@ -10,6 +10,9 @@
     background-color: $color__background-header;
     border-bottom: 1px solid black;
     padding: 1em;
+    @media screen and (max-width: 419px){
+        justify-content: center;
+    }
     
     @media screen and (min-width: $query__small){
         padding: 1 em 2em;
@@ -21,15 +24,20 @@
      min-height: 65px;
      flex-wrap: wrap;  
     flex: 1 0 auto; //1 it can grow 0 it cna not shring, auto size is whatever content is    
-}
+    @media screen and (max-width: 419px){
+        justify-content: center;
+    }
+ }
 
 .site-branding__text {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: 65px;
-    line-height: 1;
     
+    line-height: 1;
+    @media screen and (min-width: $query__small){
+        height: 65px;
+    }
     
     
 }
@@ -63,6 +71,7 @@
 }
 
 .site-description{
+    padding-top: 10px;
     margin: 0;
     font-size: .9em;
     font-style: italic;
@@ -76,10 +85,10 @@
     justify-content: end;
     
     button.menu-toggle{
-        color: red;
+        
         padding: 0;
         margin: 0;
-        
+        padding-top: 10px;
     }
 }
 /*
