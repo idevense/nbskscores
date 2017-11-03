@@ -2,6 +2,7 @@
 
 .site-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     font-family: $font__meta;
@@ -16,11 +17,10 @@
 }
 
  .site-branding {
-    display: flex;
-    min-height: 65px;
-    width: 30%;
-    flex: 1 0 auto; //1 it can grow 0 it cna not shring, auto size is whatever content is
-    
+     display: flex;
+     min-height: 65px;
+     flex-wrap: wrap;  
+    flex: 1 0 auto; //1 it can grow 0 it cna not shring, auto size is whatever content is    
 }
 
 .site-branding__text {
@@ -29,18 +29,22 @@
     justify-content: end;
     height: 65px;
     line-height: 1;
+    
+    
+    
 }
 
 .custom-logo-link{
     margin-right: 1em;
     flex-shrink: 0;
     img {
-        display: block;
+        display: block;       
         height: 65px;
         width: auto;
       
     }
 }
+
 
 .site-title {
     margin: 0;
@@ -53,7 +57,7 @@
 
 		&:hover,
 		&:focus {
-			text-decoration: underline;
+			text-decoration: none;
 		}
     }   
 }
@@ -65,7 +69,19 @@
     font-weight: 700;
 }
 
-
+.main-navigation{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+    button.menu-toggle{
+        color: red;
+        padding: 0;
+        margin: 0;
+        
+    }
+}
 /*
 Header Menu
 */

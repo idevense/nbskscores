@@ -1,0 +1,19 @@
+.site-main{
+    display: flex;
+    justify-content: center;
+    
+    .homepage-content{
+        
+        
+        @supports (grid-area: auto) {
+            @media screen and (min-width: $query__medium){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                //max-width: $query__large;
+                
+                
+            }
+
+        }
+    }
+}

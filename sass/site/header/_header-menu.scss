@@ -1,8 +1,10 @@
 .main-navigation {
-	display: block;
+	
 	font-family: $font__meta;
 	font-size: 100%;
-	clear: left;
+	border: 1px solid black;
+        
+        
 
 	ul {
 		display: none;
@@ -100,32 +102,28 @@
 	}
 	.menu-item-has-children > a,
 	.page_item_has_children > a {
-		padding-right: 2em;
+		padding-right: 10em;
 	}
 }
 
-button.dropdown-toggle {
-	position: absolute;
-	right: 0;
+button.dropdown-toggle {        
 	font-size: 0.8em;
 	border: none;
 	background: inherit;
 	line-height: 1em;
-	padding: .4em 1em .4em .5em;
-               
+       
+	//padding: .4em 1em .4em .5em;
+        
 }
 .menu-toggle {
-	display: block;
+	
 	width: 100%;
-	margin: 1.2em 1.2em 0 0;
-	padding: .6em .8em;
         font-size: 125%;
 	text-transform: uppercase;
 	color: $color__button_drpdwn;
 	background-color: $color__background-header;
 	border: none;
-	border-radius: 0;
-        
+	border-radius: 0;       
 }
 
 /* Toggle small menu and children on */
