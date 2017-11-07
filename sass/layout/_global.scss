@@ -1,9 +1,9 @@
-
 .site-main {
     padding: 1em;
     max-width: $query__small;
     margin: 0 auto;
-        
+   
+    
     @media screen and (min-width: $query__small){
         padding: 1em 2em;
         max-width: $query__medium;

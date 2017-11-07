@@ -42,9 +42,12 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
+                                
                         </div>
 		</div><!-- .site-branding -->
-
+                <div class="searchandmenu">
+                    
+                <?php get_search_form(); ?>
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '&#9776; Meny', 'nbskscores' ); ?></button>
 			<?php
@@ -54,4 +57,5 @@
 				) );
 			?>
 		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+                </div>
+        </header><!-- #masthead -->

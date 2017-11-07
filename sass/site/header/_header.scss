@@ -3,40 +3,43 @@
 .site-header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
+    justify-content: center;
+    align-items: flex-end;
     font-family: $font__meta;
     color: $color__text-header;
     background-color: $color__background-header;
     border-bottom: 1px solid black;
     padding: 1em;
-    @media screen and (max-width: 419px){
-        justify-content: center;
-    }
-    
+      
     @media screen and (min-width: $query__small){
         padding: 1 em 2em;
+        justify-content: space-between;
     }
 }
 
  .site-branding {
      display: flex;
+     justify-content: center;
      min-height: 65px;
      flex-wrap: wrap;  
-    flex: 1 0 auto; //1 it can grow 0 it cna not shring, auto size is whatever content is    
-    @media screen and (max-width: 419px){
-        justify-content: center;
+    flex: 1 0 auto; //1 it can grow 0 it cna not shring, auto size is whatever content is   
+    
+    @media screen and (min-width: $query__small){
+        justify-content: flex-start;
+        align-items: flex-end;
     }
- }
-
+ } 
+ 
 .site-branding__text {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     
     line-height: 1;
     @media screen and (min-width: $query__small){
         height: 65px;
+        flex-direction: row;
+        align-items: flex-end;
     }
     
     
@@ -70,7 +73,7 @@
     }   
 }
 
-.site-description{
+.site-description {
     padding-top: 10px;
     margin: 0;
     font-size: .9em;
@@ -78,18 +81,59 @@
     font-weight: 700;
 }
 
-.main-navigation{
-    
+.searchandmenu {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
+    flex-flow: column wrap;
+    min-height: 65px;
+    flex: 0 0 auto; //1 it can grow 0 it cna not shring, auto size is whatever content is  
     
-    button.menu-toggle{
         
-        padding: 0;
-        margin: 0;
-        padding-top: 10px;
+    @media screen and (min-width: $query__small){
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        
     }
+        
+    form.searchform {
+        
+        margin-top: 10px;
+        margin-right: 20px;
+        position: relative;
+       
+    }
+    form.searchform .search-field {
+    }
+    
+    form.searchform input {
+        width: 65px;
+        border: none;
+        background-color: transparent;
+        
+    }
+    form.searchform input:focus{
+            border: 1px solid #18b5e0;
+            border-radius: 5px;
+            width: 200px;
+            transition: 0.3s ease-in;
+            
+          
+        }
+      
+    form.searchform .fa-search {
+        position: absolute;
+       right: 0;
+       top: 0;
+       padding: 7px 7px 0 0;
+        pointer-events: none;       
+    }
+    
+    button.menu-toggle {
+        
+        margin-top: 10px;
+        padding: 0;  
+        
+        }
 }
 /*
 Header Menu
