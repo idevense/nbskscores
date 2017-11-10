@@ -79,6 +79,7 @@
     font-size: .9em;
     font-style: italic;
     font-weight: 700;
+    word-break: keep-all;
 }
 
 .searchandmenu {
@@ -97,28 +98,28 @@
         
     form.searchform {
         
-        margin-top: 10px;
+       margin-top: 10px;
         margin-right: 20px;
         position: relative;
        
     }
-    form.searchform .search-field {
-    }
-    
+        
     form.searchform input {
         width: 65px;
-        border: none;
+        border: 1px solid $color__background-header;
         background-color: transparent;
+        -webkit-transition: width 0.3s ease-in-out;
+           transition: width 0.3s ease-in-out;
+              
+        
+        &:focus{
+           border: 1px solid #18b5e0;
+           width: 200px;
+            
+           
+        }
         
     }
-    form.searchform input:focus{
-            border: 1px solid #18b5e0;
-            border-radius: 5px;
-            width: 200px;
-            transition: 0.3s ease-in;
-            
-          
-        }
       
     form.searchform .fa-search {
         position: absolute;
